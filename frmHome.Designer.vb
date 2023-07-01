@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmHome
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,10 @@ Partial Class frmHome
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHome))
         Me.btnSales = New System.Windows.Forms.Button()
         Me.sidePanel = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -30,169 +32,203 @@ Partial Class frmHome
         Me.btnAdmin = New System.Windows.Forms.Button()
         Me.btnReport = New System.Windows.Forms.Button()
         Me.topBar = New System.Windows.Forms.Panel()
+        Me.LbTime = New System.Windows.Forms.Label()
+        Me.BntDmode = New System.Windows.Forms.Button()
+        Me.BtnNmode = New System.Windows.Forms.Button()
         Me.PnlScreen = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.BtnNmode = New System.Windows.Forms.Button()
-        Me.BntDmode = New System.Windows.Forms.Button()
+        Me.TimeDisplay = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.sidePanel.SuspendLayout()
         Me.topBar.SuspendLayout()
         Me.PnlScreen.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnSales
         '
+        resources.ApplyResources(Me.btnSales, "btnSales")
         Me.btnSales.FlatAppearance.BorderSize = 0
-        Me.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSales.Font = New System.Drawing.Font("Segoe UI", 15.0!)
         Me.btnSales.ForeColor = System.Drawing.Color.White
-        Me.btnSales.Location = New System.Drawing.Point(-1, 48)
         Me.btnSales.Name = "btnSales"
-        Me.btnSales.Size = New System.Drawing.Size(146, 49)
-        Me.btnSales.TabIndex = 3
-        Me.btnSales.Text = "Sales"
         Me.btnSales.UseVisualStyleBackColor = True
         '
         'sidePanel
         '
         Me.sidePanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.sidePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.sidePanel.Controls.Add(Me.PictureBox4)
+        Me.sidePanel.Controls.Add(Me.PictureBox1)
+        Me.sidePanel.Controls.Add(Me.btnReport)
+        Me.sidePanel.Controls.Add(Me.PictureBox3)
+        Me.sidePanel.Controls.Add(Me.PictureBox2)
         Me.sidePanel.Controls.Add(Me.Button1)
         Me.sidePanel.Controls.Add(Me.btnHome)
         Me.sidePanel.Controls.Add(Me.btnSales)
         Me.sidePanel.Controls.Add(Me.BtnSocks)
         Me.sidePanel.Controls.Add(Me.btnAdmin)
-        Me.sidePanel.Controls.Add(Me.btnReport)
-        Me.sidePanel.Dock = System.Windows.Forms.DockStyle.Left
-        Me.sidePanel.Location = New System.Drawing.Point(0, 24)
+        resources.ApplyResources(Me.sidePanel, "sidePanel")
         Me.sidePanel.Name = "sidePanel"
-        Me.sidePanel.Size = New System.Drawing.Size(147, 548)
-        Me.sidePanel.TabIndex = 4
         '
         'Button1
         '
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button1.Location = New System.Drawing.Point(0, 528)
+        resources.ApplyResources(Me.Button1, "Button1")
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(147, 20)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Back to Dashboard"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'btnHome
         '
+        resources.ApplyResources(Me.btnHome, "btnHome")
         Me.btnHome.FlatAppearance.BorderSize = 0
-        Me.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 15.0!)
         Me.btnHome.ForeColor = System.Drawing.Color.White
-        Me.btnHome.Location = New System.Drawing.Point(-1, 0)
         Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(146, 49)
-        Me.btnHome.TabIndex = 3
-        Me.btnHome.Text = "Home"
         Me.btnHome.UseVisualStyleBackColor = True
         '
         'BtnSocks
         '
+        resources.ApplyResources(Me.BtnSocks, "BtnSocks")
         Me.BtnSocks.FlatAppearance.BorderSize = 0
-        Me.BtnSocks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnSocks.Font = New System.Drawing.Font("Segoe UI", 15.0!)
         Me.BtnSocks.ForeColor = System.Drawing.Color.White
-        Me.BtnSocks.Location = New System.Drawing.Point(-1, 102)
         Me.BtnSocks.Name = "BtnSocks"
-        Me.BtnSocks.Size = New System.Drawing.Size(146, 49)
-        Me.BtnSocks.TabIndex = 2
-        Me.BtnSocks.Text = "Iventory"
         Me.BtnSocks.UseVisualStyleBackColor = True
         '
         'btnAdmin
         '
+        resources.ApplyResources(Me.btnAdmin, "btnAdmin")
         Me.btnAdmin.FlatAppearance.BorderSize = 0
-        Me.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAdmin.Font = New System.Drawing.Font("Segoe UI", 15.0!)
         Me.btnAdmin.ForeColor = System.Drawing.Color.White
-        Me.btnAdmin.Location = New System.Drawing.Point(-1, 211)
         Me.btnAdmin.Name = "btnAdmin"
-        Me.btnAdmin.Size = New System.Drawing.Size(146, 49)
-        Me.btnAdmin.TabIndex = 1
-        Me.btnAdmin.Text = "Profile"
         Me.btnAdmin.UseVisualStyleBackColor = True
         '
         'btnReport
         '
+        resources.ApplyResources(Me.btnReport, "btnReport")
         Me.btnReport.FlatAppearance.BorderSize = 0
-        Me.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReport.Font = New System.Drawing.Font("Segoe UI", 15.0!)
         Me.btnReport.ForeColor = System.Drawing.Color.White
-        Me.btnReport.Location = New System.Drawing.Point(3, 157)
         Me.btnReport.Name = "btnReport"
-        Me.btnReport.Size = New System.Drawing.Size(146, 49)
-        Me.btnReport.TabIndex = 1
-        Me.btnReport.Text = "Report"
         Me.btnReport.UseVisualStyleBackColor = True
         '
         'topBar
         '
         Me.topBar.BackColor = System.Drawing.Color.Red
+        Me.topBar.Controls.Add(Me.LbTime)
         Me.topBar.Controls.Add(Me.BntDmode)
         Me.topBar.Controls.Add(Me.BtnNmode)
-        Me.topBar.Dock = System.Windows.Forms.DockStyle.Top
-        Me.topBar.Location = New System.Drawing.Point(0, 0)
+        resources.ApplyResources(Me.topBar, "topBar")
         Me.topBar.Name = "topBar"
-        Me.topBar.Size = New System.Drawing.Size(984, 24)
-        Me.topBar.TabIndex = 3
+        '
+        'LbTime
+        '
+        resources.ApplyResources(Me.LbTime, "LbTime")
+        Me.LbTime.Name = "LbTime"
+        '
+        'BntDmode
+        '
+        resources.ApplyResources(Me.BntDmode, "BntDmode")
+        Me.BntDmode.Name = "BntDmode"
+        Me.BntDmode.UseVisualStyleBackColor = True
+        '
+        'BtnNmode
+        '
+        resources.ApplyResources(Me.BtnNmode, "BtnNmode")
+        Me.BtnNmode.Name = "BtnNmode"
+        Me.BtnNmode.UseVisualStyleBackColor = True
         '
         'PnlScreen
         '
         Me.PnlScreen.BackColor = System.Drawing.SystemColors.ActiveBorder
+        resources.ApplyResources(Me.PnlScreen, "PnlScreen")
+        Me.PnlScreen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PnlScreen.Controls.Add(Me.PictureBox6)
         Me.PnlScreen.Controls.Add(Me.Label1)
-        Me.PnlScreen.Location = New System.Drawing.Point(151, 30)
+        Me.PnlScreen.Controls.Add(Me.PictureBox5)
         Me.PnlScreen.Name = "PnlScreen"
-        Me.PnlScreen.Size = New System.Drawing.Size(785, 542)
-        Me.PnlScreen.TabIndex = 5
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 20.0!)
-        Me.Label1.Location = New System.Drawing.Point(254, 228)
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(154, 37)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Dash board"
         '
-        'BtnNmode
+        'TimeDisplay
         '
-        Me.BtnNmode.Location = New System.Drawing.Point(841, 3)
-        Me.BtnNmode.Name = "BtnNmode"
-        Me.BtnNmode.Size = New System.Drawing.Size(67, 21)
-        Me.BtnNmode.TabIndex = 0
-        Me.BtnNmode.Text = "Night"
-        Me.BtnNmode.UseVisualStyleBackColor = True
+        Me.TimeDisplay.Interval = 1000
         '
-        'BntDmode
+        'PictureBox6
         '
-        Me.BntDmode.Location = New System.Drawing.Point(914, 3)
-        Me.BntDmode.Name = "BntDmode"
-        Me.BntDmode.Size = New System.Drawing.Size(67, 21)
-        Me.BntDmode.TabIndex = 0
-        Me.BntDmode.Text = "Day"
-        Me.BntDmode.UseVisualStyleBackColor = True
+        Me.PictureBox6.Image = Global.project_Demo.My.Resources.Resources.report
+        resources.ApplyResources(Me.PictureBox6, "PictureBox6")
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.project_Demo.My.Resources.Resources.invoice
+        resources.ApplyResources(Me.PictureBox5, "PictureBox5")
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.project_Demo.My.Resources.Resources.accounts
+        resources.ApplyResources(Me.PictureBox4, "PictureBox4")
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox1
+        '
+        resources.ApplyResources(Me.PictureBox1, "PictureBox1")
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = Global.project_Demo.My.Resources.Resources.home1
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.project_Demo.My.Resources.Resources.inventory
+        resources.ApplyResources(Me.PictureBox3, "PictureBox3")
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox2.Image = Global.project_Demo.My.Resources.Resources.sales
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.TabStop = False
         '
         'frmHome
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(984, 572)
+        Me.Controls.Add(Me.PnlScreen)
         Me.Controls.Add(Me.sidePanel)
         Me.Controls.Add(Me.topBar)
-        Me.Controls.Add(Me.PnlScreen)
         Me.Name = "frmHome"
+        Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Admin"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.sidePanel.ResumeLayout(False)
         Me.topBar.ResumeLayout(False)
+        Me.topBar.PerformLayout()
         Me.PnlScreen.ResumeLayout(False)
         Me.PnlScreen.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -209,4 +245,12 @@ Partial Class frmHome
     Friend WithEvents Label1 As Label
     Friend WithEvents BntDmode As Button
     Friend WithEvents BtnNmode As Button
+    Friend WithEvents LbTime As Label
+    Friend WithEvents TimeDisplay As Timer
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
 End Class

@@ -78,16 +78,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Ck_ventutres.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Ck_ventutres.xsd</DependentUpon>
-    </Compile>
     <Compile Include="clases\colors.vb" />
     <Compile Include="DashboardAdim\Home.Designer.vb">
       <DependentUpon>Home.vb</DependentUpon>
     </Compile>
     <Compile Include="DashboardAdim\Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardAdim\Profile\frmProfile.Designer.vb">
+      <DependentUpon>frmProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardAdim\Profile\frmProfile.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DashboardAdim\Report\Report.Designer.vb">
@@ -106,6 +107,24 @@
       <DependentUpon>Stock.vb</DependentUpon>
     </Compile>
     <Compile Include="DashboardAdim\Stocks\Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardUser\Items\Items.Designer.vb">
+      <DependentUpon>Items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUser\Items\Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardUser\Sales\UsrSales.Designer.vb">
+      <DependentUpon>UsrSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUser\Sales\UsrSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardUser\UsrHome.Designer.vb">
+      <DependentUpon>UsrHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardUser\UsrHome.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmHome.Designer.vb">
@@ -136,12 +155,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="DashboardAdim\Profile\FrmProfile.Designer.vb">
-      <DependentUpon>FrmProfile.vb</DependentUpon>
-    </Compile>
-    <Compile Include="DashboardAdim\Profile\FrmProfile.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="DashboardAdim\Register\frmRegister.Designer.vb">
       <DependentUpon>frmRegister.vb</DependentUpon>
     </Compile>
@@ -159,6 +172,9 @@
     <EmbeddedResource Include="DashboardAdim\Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DashboardAdim\Profile\frmProfile.resx">
+      <DependentUpon>frmProfile.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DashboardAdim\Report\Report.resx">
       <DependentUpon>Report.vb</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +183,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardAdim\Stocks\Stock.resx">
       <DependentUpon>Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUser\Sales\UsrSales.resx">
+      <DependentUpon>UsrSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardUser\UsrHome.resx">
+      <DependentUpon>UsrHome.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.vb</DependentUpon>
@@ -180,9 +202,6 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="DashboardAdim\Profile\FrmProfile.resx">
-      <DependentUpon>FrmProfile.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DashboardAdim\Register\frmRegister.resx">
       <DependentUpon>frmRegister.vb</DependentUpon>
     </EmbeddedResource>
@@ -191,17 +210,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ck_ventutres.xsc">
-      <DependentUpon>Ck_ventutres.xsd</DependentUpon>
-    </None>
-    <None Include="Ck_ventutres.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Ck_ventutres.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Ck_ventutres.xss">
-      <DependentUpon>Ck_ventutres.xsd</DependentUpon>
-    </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -214,13 +222,24 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DataBase\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Ck_ventutres.mdb">
+    <Content Include="DataBase\Ck_ventutres.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\report.png" />
+    <None Include="Resources\accounts.jpg" />
+    <None Include="Resources\invoice.png" />
+    <None Include="Resources\inventory.png" />
+    <None Include="Resources\invent.jpeg" />
+    <None Include="Resources\sales.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\home.jpeg" />
+    <None Include="Resources\Door_Out-512.png" />
+    <None Include="Resources\door-icon-emergency-exit-sign-vector-20712466.jpg" />
+    <None Include="Resources\user_change-512.png" />
+    <None Include="Resources\items.png" />
+    <None Include="Resources\Invoice2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

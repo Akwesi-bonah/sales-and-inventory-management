@@ -4,6 +4,7 @@
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         change_menu("Home")
+        TimeDisplay.Start()
     End Sub
 
 
@@ -53,7 +54,7 @@
             Case "Stocks"
                 addForm(Stock)
             Case "Admin"
-                addForm(FrmProfile)
+                addForm(frmProfile)
 
         End Select
     End Sub
@@ -116,5 +117,13 @@
         For Each frm As Form In PnlScreen.Controls.OfType(Of Form)()
             frm.BackColor = PnlScreen.BackColor
         Next
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        addForm(Home)
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles TimeDisplay.Tick
+
     End Sub
 End Class

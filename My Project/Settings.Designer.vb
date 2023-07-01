@@ -53,27 +53,6 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\DataBase\Ck_ventutre"& _ 
-            "s.mdb")>  _
-        Public ReadOnly Property Ck_ventutresConnectionString() As String
-            Get
-                Return CType(Me("Ck_ventutresConnectionString"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\Ck_ventutres.mdb")>  _
-        Public ReadOnly Property Ck_ventutresConnected() As String
-            Get
-                Return CType(Me("Ck_ventutresConnected"),String)
-            End Get
-        End Property
     End Class
 End Namespace
 

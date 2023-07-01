@@ -47,7 +47,7 @@ Partial Class frmLogin
         Me.PnLBack.Controls.Add(Me.PnlDetails)
         Me.PnLBack.Controls.Add(Me.Lblventures)
         Me.PnLBack.Controls.Add(Me.LblCk)
-        Me.PnLBack.Location = New System.Drawing.Point(6, 3)
+        Me.PnLBack.Location = New System.Drawing.Point(-18, 3)
         Me.PnLBack.Name = "PnLBack"
         Me.PnLBack.Size = New System.Drawing.Size(726, 501)
         Me.PnLBack.TabIndex = 0
@@ -178,7 +178,7 @@ Partial Class frmLogin
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.CancelButton = Me.BtnExit
-        Me.ClientSize = New System.Drawing.Size(735, 504)
+        Me.ClientSize = New System.Drawing.Size(687, 504)
         Me.Controls.Add(Me.PnLBack)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.DoubleBuffered = True
