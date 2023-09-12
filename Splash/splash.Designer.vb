@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class splash
+Partial Class Splash
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -20,126 +20,179 @@ Partial Class splash
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.LblLoad = New System.Windows.Forms.Label()
-        Me.PgBLoad = New System.Windows.Forms.ProgressBar()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.LblPercent = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pboStocks = New System.Windows.Forms.PictureBox()
+        Me.pboSales = New System.Windows.Forms.PictureBox()
+        Me.pboTransaction = New System.Windows.Forms.PictureBox()
+        Me.LblSales = New System.Windows.Forms.Label()
+        Me.lblSystems = New System.Windows.Forms.Label()
+        Me.Pbbar = New System.Windows.Forms.ProgressBar()
+        Me.lblVlue = New System.Windows.Forms.Label()
+        Me.timecount = New System.Windows.Forms.Timer(Me.components)
+        Me.LblLoading = New System.Windows.Forms.Label()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Panel1.SuspendLayout()
+        CType(Me.pboStocks, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pboSales, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pboTransaction, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
+        'Panel1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 120.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(52, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(300, 181)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "CK"
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.pboStocks)
+        Me.Panel1.Controls.Add(Me.pboSales)
+        Me.Panel1.Controls.Add(Me.pboTransaction)
+        Me.Panel1.Location = New System.Drawing.Point(12, 170)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(527, 170)
+        Me.Panel1.TabIndex = 0
         '
-        'Label2
+        'pboStocks
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 70.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(306, 46)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(420, 107)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Ventures"
+        Me.pboStocks.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pboStocks.Image = Global.project_Demo.My.Resources.Resources.icon_round_80px
+        Me.pboStocks.Location = New System.Drawing.Point(358, 27)
+        Me.pboStocks.Name = "pboStocks"
+        Me.pboStocks.Size = New System.Drawing.Size(138, 119)
+        Me.pboStocks.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pboStocks.TabIndex = 0
+        Me.pboStocks.TabStop = False
         '
-        'Label3
+        'pboSales
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(86, 205)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(601, 46)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Sales and Inventory Mangement "
+        Me.pboSales.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pboSales.Image = Global.project_Demo.My.Resources.Resources.sto
+        Me.pboSales.Location = New System.Drawing.Point(191, 27)
+        Me.pboSales.Name = "pboSales"
+        Me.pboSales.Size = New System.Drawing.Size(138, 119)
+        Me.pboSales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pboSales.TabIndex = 0
+        Me.pboSales.TabStop = False
         '
-        'Label4
+        'pboTransaction
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(275, 251)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(153, 46)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "System"
+        Me.pboTransaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pboTransaction.Image = Global.project_Demo.My.Resources.Resources.sales3
+        Me.pboTransaction.Location = New System.Drawing.Point(33, 27)
+        Me.pboTransaction.Name = "pboTransaction"
+        Me.pboTransaction.Size = New System.Drawing.Size(138, 119)
+        Me.pboTransaction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pboTransaction.TabIndex = 0
+        Me.pboTransaction.TabStop = False
         '
-        'LblLoad
+        'LblSales
         '
-        Me.LblLoad.AutoSize = True
-        Me.LblLoad.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblLoad.Location = New System.Drawing.Point(263, 398)
-        Me.LblLoad.Name = "LblLoad"
-        Me.LblLoad.Size = New System.Drawing.Size(89, 26)
-        Me.LblLoad.TabIndex = 4
-        Me.LblLoad.Text = "Loading"
+        Me.LblSales.AutoSize = True
+        Me.LblSales.Font = New System.Drawing.Font("Brilliant", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblSales.ForeColor = System.Drawing.Color.White
+        Me.LblSales.Location = New System.Drawing.Point(25, 22)
+        Me.LblSales.Name = "LblSales"
+        Me.LblSales.Size = New System.Drawing.Size(399, 84)
+        Me.LblSales.TabIndex = 0
+        Me.LblSales.Text = "Sales And Inventory"
         '
-        'PgBLoad
+        'lblSystems
         '
-        Me.PgBLoad.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PgBLoad.ForeColor = System.Drawing.Color.Lime
-        Me.PgBLoad.Location = New System.Drawing.Point(0, 427)
-        Me.PgBLoad.Name = "PgBLoad"
-        Me.PgBLoad.Size = New System.Drawing.Size(800, 23)
-        Me.PgBLoad.TabIndex = 5
+        Me.lblSystems.AutoSize = True
+        Me.lblSystems.Font = New System.Drawing.Font("Gobold Bold", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSystems.ForeColor = System.Drawing.Color.White
+        Me.lblSystems.Location = New System.Drawing.Point(410, 47)
+        Me.lblSystems.Name = "lblSystems"
+        Me.lblSystems.Size = New System.Drawing.Size(155, 52)
+        Me.lblSystems.TabIndex = 0
+        Me.lblSystems.Text = "System"
         '
-        'Timer1
+        'Pbbar
         '
-        Me.Timer1.Interval = 1
+        Me.Pbbar.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Pbbar.BackColor = System.Drawing.Color.Lime
+        Me.Pbbar.Location = New System.Drawing.Point(-3, 389)
+        Me.Pbbar.Name = "Pbbar"
+        Me.Pbbar.Size = New System.Drawing.Size(555, 14)
+        Me.Pbbar.TabIndex = 1
+        Me.Pbbar.UseWaitCursor = True
         '
-        'LblPercent
+        'lblVlue
         '
-        Me.LblPercent.AutoSize = True
-        Me.LblPercent.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPercent.Location = New System.Drawing.Point(372, 398)
-        Me.LblPercent.Name = "LblPercent"
-        Me.LblPercent.Size = New System.Drawing.Size(24, 26)
-        Me.LblPercent.TabIndex = 4
-        Me.LblPercent.Text = "0"
+        Me.lblVlue.AutoSize = True
+        Me.lblVlue.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVlue.Location = New System.Drawing.Point(493, 368)
+        Me.lblVlue.Name = "lblVlue"
+        Me.lblVlue.Size = New System.Drawing.Size(17, 18)
+        Me.lblVlue.TabIndex = 3
+        Me.lblVlue.Text = "0"
         '
-        'splash
+        'timecount
+        '
+        '
+        'LblLoading
+        '
+        Me.LblLoading.AutoSize = True
+        Me.LblLoading.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblLoading.Location = New System.Drawing.Point(387, 367)
+        Me.LblLoading.Name = "LblLoading"
+        Me.LblLoading.Size = New System.Drawing.Size(89, 22)
+        Me.LblLoading.TabIndex = 4
+        Me.LblLoading.Text = "Loading..."
+        '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Guna2Panel1.Controls.Add(Me.lblSystems)
+        Me.Guna2Panel1.Controls.Add(Me.LblSales)
+        Me.Guna2Panel1.CustomBorderColor = System.Drawing.Color.White
+        Me.Guna2Panel1.CustomBorderThickness = New System.Windows.Forms.Padding(0, 0, 0, 10)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(-13, -3)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(577, 135)
+        Me.Guna2Panel1.TabIndex = 5
+        '
+        'Splash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.PgBLoad)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.LblPercent)
-        Me.Controls.Add(Me.LblLoad)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "splash"
+        Me.BackColor = System.Drawing.Color.Teal
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(553, 402)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.Guna2Panel1)
+        Me.Controls.Add(Me.LblLoading)
+        Me.Controls.Add(Me.lblVlue)
+        Me.Controls.Add(Me.Pbbar)
+        Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "Splash"
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "splash"
+        Me.Panel1.ResumeLayout(False)
+        CType(Me.pboStocks, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pboSales, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pboTransaction, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents LblLoad As Label
-    Friend WithEvents PgBLoad As ProgressBar
-    Friend WithEvents Timer1 As Timer
-    Friend WithEvents LblPercent As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pboTransaction As PictureBox
+    Friend WithEvents LblSales As Label
+    Friend WithEvents lblSystems As Label
+    Friend WithEvents pboStocks As PictureBox
+    Friend WithEvents pboSales As PictureBox
+    Friend WithEvents Pbbar As ProgressBar
+    Friend WithEvents lblVlue As Label
+    Friend WithEvents timecount As Timer
+    Friend WithEvents LblLoading As Label
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
 End Class

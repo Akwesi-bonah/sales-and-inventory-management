@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sales_management", "Sales_management.vbproj", "{D24F69E0-9619-4226-A449-5C641CA31900}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C749126-AA51-4C64-AD92-1E98BBD92191}"
+	ProjectSection(SolutionItems) = preProject
+		Icon1.ico = Icon1.ico
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Smallsms", "..\Smallsms\Smallsms.vdproj", "{EC4918EB-86A4-4F82-A9C7-671A70D6315A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D24F69E0-9619-4226-A449-5C641CA31900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24F69E0-9619-4226-A449-5C641CA31900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24F69E0-9619-4226-A449-5C641CA31900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24F69E0-9619-4226-A449-5C641CA31900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4918EB-86A4-4F82-A9C7-671A70D6315A}.Debug|Any CPU.ActiveCfg = Debug
+		{EC4918EB-86A4-4F82-A9C7-671A70D6315A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7931CD20-ABAD-4BA0-A671-6E29806CE1E9}
+	EndGlobalSection
+EndGlobal
