@@ -4,10 +4,10 @@ Module dbconnect
     Public connect As New MySqlConnection
     Public cmd As MySqlCommand
 
-    Public server = "localhost"
-    Public username = "Admin"
-    Public password = "1122"
-    Public database = "project_demo"
+    Public server = ""
+    Public username = ""
+    Public password = ""
+    Public database = ""
 
 
 
